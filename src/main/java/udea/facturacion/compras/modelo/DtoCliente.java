@@ -1,9 +1,16 @@
 package udea.facturacion.compras.modelo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DtoCliente {
 
     private Integer idCliente;
     private String nombreCliente;
+
+    public DtoCliente(){
+
+    }
 
     public DtoCliente(Integer idCliente, String nombreCliente) {
         this.idCliente = idCliente;

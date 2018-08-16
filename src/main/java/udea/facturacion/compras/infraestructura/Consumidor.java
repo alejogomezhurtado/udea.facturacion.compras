@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 public class Consumidor implements MessageListener {
     @Override
     public void onMessage(Message message) {
-        Cliente.crear(new String(message.getBody()));
+        new Cliente().obtener(new String(message.getBody()));
         System.out.println(new String(message.getBody()));
     }
 }
