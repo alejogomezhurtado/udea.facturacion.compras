@@ -1,11 +1,10 @@
 package udea.facturacion.compras;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ComprasApplication implements CommandLineRunner {
+public class ComprasApplication{
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(ComprasApplication.class);
@@ -13,8 +12,4 @@ public class ComprasApplication implements CommandLineRunner {
 		app.run(args);
 	}
 
-	@Override
-	public void run(String... arg0) throws Exception {
-
-	}
 }

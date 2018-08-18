@@ -1,12 +1,12 @@
 package udea.facturacion.compras.modelo;
 
-public class DtoSap {
+public class DtoFactura {
 
     private Integer numeroFactura;
     private Integer valorTotal;
     private Integer idCliente;
 
-    public DtoSap(Integer numeroFactura, Integer valorTotal, Integer idCliente) {
+    public DtoFactura(Integer numeroFactura, Integer valorTotal, Integer idCliente) {
         this.numeroFactura = numeroFactura;
         this.valorTotal = valorTotal;
         this.idCliente = idCliente;
@@ -34,5 +34,14 @@ public class DtoSap {
 
     public void setIdCliente(Integer idCliente) {
         this.idCliente = idCliente;
+    }
+
+    @Override
+    public String toString() {
+        return "DtoFactura{" +
+                "numeroFactura=" + numeroFactura +
+                ", valorTotal=" + valorTotal +
+                ", idCliente=" + idCliente +
+                '}';
     }
 }
