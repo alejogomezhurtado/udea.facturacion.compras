@@ -32,4 +32,12 @@ public class DtoCliente {
     public void setNombreCliente(String nombreCliente) {
         this.nombreCliente = nombreCliente;
     }
+
+    @Override
+    public String toString() {
+        return "DtoCliente{" +
+                "idCliente=" + idCliente +
+                ", nombreCliente='" + nombreCliente + '\'' +
+                '}';
+    }
 }
